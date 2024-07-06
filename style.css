@@ -4,7 +4,9 @@
     border: none;
 }
 
-a, a:link, a:visited  {
+a,
+a:link,
+a:visited {
     color: inherit;
     text-decoration: none;
     display: inline-block;
@@ -32,46 +34,53 @@ ul li {
     list-style: none;
 }
 body {
-    background-color: #E4CEC1;
+    background-color: #e4cec1;
     font-family: Arial, serif;
     font-size: 18px;
     line-height: 28px;
 }
 
-.container{
+.container {
     max-width: 900px;
     margin: 0 auto;
     background-color: #fff;
     padding: 15px 30px;
 }
 
-.title{
+.title {
     font-size: 2.5em;
     margin-bottom: 0.5em;
     border-bottom: black 1px solid;
     line-height: 150%;
 }
 
-.photo_wrapper{
+.photo_wrapper {
+    -webkit-box-shadow: 4px 4px 13px -3px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 4px 4px 13px -3px rgba(0, 0, 0, 0.48);
+    box-shadow: 4px 4px 13px -3px rgba(0, 0, 0, 0.48);
+
     width: 310px;
-    img{
+    height: 362px;
+    img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
-.header{
+.header {
     background-color: #dddddd;
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    .info{
+    .info {
         flex-grow: 1;
     }
 }
 
-.name{
+.name {
     font-size: 2.5em;
     font-weight: 600;
     margin-top: 25px;
@@ -79,16 +88,15 @@ body {
     color: rgb(82, 82, 82);
 }
 
-
-.contacts{
-    
-    li{
+.contacts {
+    li {
         display: flex;
         gap: 10px;
         justify-content: space-between;
         margin-bottom: 15px;
         position: relative;
-        &::after{
+
+        &::after {
             position: absolute;
             bottom: -5px;
             content: "";
@@ -96,36 +104,127 @@ body {
             height: 1px;
             background-color: #aaaaaa;
         }
-        a{
-            color:#640000;
+        .discord {
             font-style: italic;
-            &:hover{
+        }
+        a {
+            font-style: italic;
+            color: #640000;
+            &:hover {
                 text-decoration: underline;
             }
         }
     }
 }
 
-.about-me{
-    
+.about-me {
 }
 
-.about-me__text{
-    p{
-        text-indent: 30px;
-        margin-bottom: 15px;
-    }
+p {
+    text-indent: 30px;
+    margin-bottom: 10px;
 }
-.skills-list{
-    padding-left: 70px;
-    li{
+
+.about-me__text {
+}
+.skills-list {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    li {
         margin-bottom: 5px;
         position: relative;
-        &::after{
+        &::after {
             position: absolute;
             content: "✅";
             left: -30px;
-            
         }
     }
+}
+
+.my-skills__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.code-example {
+    pre {
+        padding: 10px 20px;
+        background-color: #dddddd;
+        border-radius: 10px;
+    }
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project-item {
+    width: 320px;
+    height: 250px;
+    transition: all 0.5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+    h4 {
+        font-size: 1.3em;
+        margin-bottom: 7px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.courses_list {
+    margin-bottom: 50px;
+    padding-left: 30px;
+    li {
+        margin-bottom: 9px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 24px;
+
+            left: -33px;
+        }
+        
+    }
+    .youtube {
+        &::before{
+            top: 2px;
+        }
+        
+    }
+}
+
+.youtube::before{
+    background-image: url("./img/icons/free-icon-youtube-174883.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.book::before{
+    background-image: url("./img/icons/free-icon-book-5833275.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.video-course::before{
+    background-image: url("./img/icons/free-icon-elearning-2795100.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }

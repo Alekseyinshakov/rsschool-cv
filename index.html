@@ -18,13 +18,12 @@
                 <div class="info">
                     <h2 class="name">Aleksey Inshakov</h2>
                     <ul class="contacts">
-                        <li><span>Phone(telegram, whats-app, viber):</span> <a href="tel:+79510524881">+79510524881</a>
+                        <li><span>Telegram:</span> <a target="_blank" href="https://t.me/sgdy4">@sgdy4</a>
                         </li>
-                        <li><span>Discord:</span> <a
-                                href="https://discordapp.com/users/791876884983971880/">dudka0756</a></li>
-                        <li><span>Email:</span><a
+                        <li><span>Discord:</span><span class="discord">dudka0756</span></li>
+                        <li><span>Email:</span><a target="_blank"
                                 href="mailto:alexeyinshakov992@gmail.com">alexeyinshakov992@gmail.com</a></li>
-                        <li><span>City:</span><a
+                        <li><span>City:</span><a target="_blank"
                                 href="https://www.google.com/maps/place/%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA,+%D0%A0%D0%B5%D1%81%D0%BF.+%D0%9C%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D0%B8%D1%8F/@54.1971965,45.0105038,11z/data=!3m1!4b1!4m6!3m5!1s0x4144080b567650ad:0x69a0cfaaa1416941!8m2!3d54.2000477!4d45.1745115!16zL20vMDJkdmhy?entry=ttu">Saransk</a>
                         </li>
                     </ul>
@@ -48,27 +47,122 @@
                     </p>
                 </div>
             </div>
-            <div class="my-skills">
-                <div class="container">
-                    <h3 class="title">My skills</h3>
-                    <ul class="skills-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>React</li>
-                        <li>Photoshop, Figma</li>
-                        <li>Git, GitHub</li>
+
+        </div>
+        <div class="my-skills">
+            <div class="container">
+                <h3 class="title">My skills</h3>
+                <div class="my-skills__inner">
+                    <div class="technologies">
+                        <h3>Technologies</h3>
+                        <ul class="skills-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>React</li>
+                            <li>Photoshop, Figma</li>
+                            <li>Git, GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="code-example">
+                        <h3>Code example: Maximum profit on stocks</h3>
+                        <pre>
+var maxProfit = function (prices) {
+maxCash = 0;
+for(let i = 0; i < prices.length; i++) {
+    for(let n = i; n < prices.length; n++) {
+        let diff = prices[n] - prices[i]
+        if(diff > maxCash) {
+            maxCash = diff;
+        } 
+    }
+}
+return maxCash;
+};</pre>
+
+                    </div>
+                </div>
+                <div class="task-descr">
+                    <h3>Description of the task</h3>
+                    <div class="task-descr__text">
+                        <p>
+                            You receive an array prices, where prices[i] indicates the price of this stock on the i-th
+                            day.
+                        </p>
+                        <p>
+                            You want to maximize your profits by choosing one day to buy one stock and choosing another
+                            day in the future to sell that stock.
+                        </p>
+                        <p>
+                            Write a function maxProfit(prices) that returns the maximum profit you can make from this
+                            trade. If you can't make any profit, return 0.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="my-projects">
+            <div class="container">
+                <h3 class="title">My projects</h3>
+                <div class="projects">
+                    <ul class="projects-list">
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/webcam/dist/index.html">
+                                <h4>Luna studio</h4>
+                                <img src="img/Screenshot_3.jpg" alt="luna studio">
+                            </a>
+                        </li>
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/beauty-salon/dist/index.html">
+                                <h4>Delote beauty</h4>
+                                <img src="img/Screenshot_4.jpg" alt="Delote beauty">
+                            </a>
+                        </li>
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/SwedishBitter/dist/index.html">
+                                <h4>Swedish bitter</h4>
+                                <img src="img/Screenshot_6.jpg" alt="Swedish Bitter">
+                            </a>
+                        </li>
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/yandex-test125/dist/index.html">
+                                <h4>Сhess tournament</h4>
+                                <img src="img/Screenshot_5.jpg" alt="chess tournament">
+                            </a>
+                        </li>
+                        
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/note-manager/">
+                                <h4>Note manager(React app)</h4>
+                                <img src="img/Screenshot_7.jpg" alt="Note manager(React app)">
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                
+            </div>
+        </div>
+        <div class="courses">
+            <div class="container">
+                <h3 class="title">Courses and books</h3>
+                <ul class="courses_list">
+                    <li class="book">Book: Kit Grant - CSS for Profi</li>
+                    <li class="youtube">Youtube playlist: Freelancer for life - HTML + CSS</li>
+                    <li class="video-course">Udemy: Ivan Petrichenko - "JavaScript + React"</li>
+                    <li class="youtube">Youtube: Dmitry Kuzyuberdin(Dimych) - "React - way of samuray"</li>
+                </ul>
             </div>
         </div>
     </main>
 
-
+    
     </div>
 
     <!-- https://rs.school/courses/javascript-ru -->
+    <!-- <a href="https://www.flaticon.com/ru/free-icons/youtube" title="youtube иконки">Youtube иконки от Freepik - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/ru/free-icons/" title="книга иконки">Книга иконки от popo2021 - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/ru/free-icons/" title="обучение иконки">Обучение иконки от Freepik - Flaticon</a> -->
 </body>
 
 </html>
