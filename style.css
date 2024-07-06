@@ -201,7 +201,11 @@ h3 {
 
             left: -33px;
         }
-        
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
     .youtube {
         &::before{
@@ -227,4 +231,13 @@ h3 {
     background-image: url("./img/icons/free-icon-elearning-2795100.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+.langs-list{
+    padding-left: 20px;
+    margin-bottom: 50px;
+    li{
+        list-style-type: square;
+    }
 }
