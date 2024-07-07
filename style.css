@@ -115,10 +115,9 @@
     justify-content: space-around;
     margin-bottom: 20px;
   }
-  h3 {
+  h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    font-weight: 700;
   }
   .code-example pre {
     padding: 10px 20px;
@@ -219,6 +218,12 @@
 
   @media (max-width: 520px) {
         pre{
-            font-size: 12px;
+            font-size: 10px;
+        }
+        .container{
+          padding: 15px 15px;
+        }
+        .contacts li{
+          font-size: 14px;
         }
   }
