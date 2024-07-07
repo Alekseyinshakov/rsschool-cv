@@ -1,12 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    CV
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="photo_wrapper">
+                    <img src="img/photo.jpg" alt="my-photo">
+                </div>
+                <div class="info">
+                    <h1 class="name">Aleksey Inshakov</h1>
+                    <ul class="contacts">
+                        <li><span>Telegram:</span> <a target="_blank" href="https://t.me/sgdy4">@sgdy4</a>
+                        </li>
+                        <li><span>Discord:</span><span class="discord">dudka0756</span></li>
+                        <li><span>Email:</span><a target="_blank"
+                                href="mailto:alexeyinshakov992@gmail.com">alexeyinshakov992@gmail.com</a></li>
+                        <li><span>City:</span><a target="_blank"
+                                href="https://www.google.com/maps/place/%D0%A1%D0%B0%D1%80%D0%B0%D0%BD%D1%81%D0%BA,+%D0%A0%D0%B5%D1%81%D0%BF.+%D0%9C%D0%BE%D1%80%D0%B4%D0%BE%D0%B2%D0%B8%D1%8F/@54.1971965,45.0105038,11z/data=!3m1!4b1!4m6!3m5!1s0x4144080b567650ad:0x69a0cfaaa1416941!8m2!3d54.2000477!4d45.1745115!16zL20vMDJkdmhy?entry=ttu">Saransk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="about-me">
+            <div class="container">
+                <h3 class="title">About me</h3>
+                <div class="about-me__text">
+                    <p class="paragraph">I am 32 years old, I am an operator of engineering systems at a sports
+                        facility. I became interested in the frontend a few years ago and independently mastered layout
+                        and the basics of Javascript and React. </p>
+                    <p>I still lack the knowledge and skills to work as a developer, so I decided to study at a RS
+                        school, on the advice of a friend.
+                        I hope I have enough patience and strength to reach the end and become a junior front-end
+                        developer.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="my-skills">
+            <div class="container">
+                <h3 class="title">Skills</h3>
+                <div class="my-skills__inner">
+                    <div class="technologies">
+                        <h3>Technologies</h3>
+                        <ul class="skills-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>React</li>
+                            <li>Photoshop, Figma</li>
+                            <li>Git, GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="code-example">
+                        <h3>Code example: Maximum profit on stocks</h3>
+                        <pre>
+var maxProfit = function (prices) {
+maxCash = 0;
+for(let i = 0; i &lt; prices.length; i++) {
+    for(let n = i; n &lt; prices.length; n++) {
+        let diff = prices[n] - prices[i]
+        if(diff > maxCash) {
+            maxCash = diff;
+        } 
+    }
+}
+return maxCash;
+};</pre>
+
+                    </div>
+                </div>
+                <div class="task-descr">
+                    <h3>Description of the task</h3>
+                    <div class="task-descr__text">
+                        <p>
+                            You receive an array prices, where prices[i] indicates the price of this stock on the i-th
+                            day.
+                        </p>
+                        <p>
+                            You want to maximize your profits by choosing one day to buy one stock and choosing another
+                            day in the future to sell that stock.
+                        </p>
+                        <p>
+                            Write a function maxProfit(prices) that returns the maximum profit you can make from this
+                            trade. If you can't make any profit, return 0.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="my-projects">
+            <div class="container">
+                <h3 class="title">Projects</h3>
+                <div class="projects">
+                    <ul class="projects-list">
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/webcam/dist/index.html">
+                                <h4>Luna studio</h4>
+                                <img src="img/Screenshot_3.jpg" alt="luna studio">
+                            </a>
+                        </li>
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/beauty-salon/dist/index.html">
+                                <h4>Delote beauty</h4>
+                                <img src="img/Screenshot_4.jpg" alt="Delote beauty">
+                            </a>
+                        </li>
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/SwedishBitter/dist/index.html">
+                                <h4>Swedish bitter</h4>
+                                <img src="img/Screenshot_6.jpg" alt="Swedish Bitter">
+                            </a>
+                        </li>
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/yandex-test125/dist/index.html">
+                                <h4>Сhess tournament</h4>
+                                <img src="img/Screenshot_5.jpg" alt="chess tournament">
+                            </a>
+                        </li>
+                        
+                        <li class="project-item">
+                            <a target="_blank" href="https://alekseyinshakov.github.io/note-manager/">
+                                <h4>Note manager(React app)</h4>
+                                <img src="img/Screenshot_7.jpg" alt="Note manager(React app)">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="courses">
+            <div class="container">
+                <h3 class="title">Education</h3>
+                <ul class="courses_list">
+                    <li class="book">Book: Kit Grant - CSS for Profi</li>
+                    <li class="youtube"><a href="https://www.youtube.com/watch?v=yJcCKuxfb2o&list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr&pp=iAQB">Youtube playlist: Freelancer for life - HTML + CSS</a></li>
+                    <li class="video-course"><a href="https://www.udemy.com/course/javascript_full">Udemy: Ivan Petrichenko - "JavaScript + React"</a></li>
+                    <li class="youtube"><a href="https://www.youtube.com/watch?v=gb7gMluAeao&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8">Youtube playlist: Dmitry Kuzyuberdin(Dimych) - "React - way of samuray"</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="langs">
+            <div class="container">
+                <h3 class="title">Languages</h3>
+                <ul class="langs-list">
+                    <li>Russian - Native</li>
+                    <li>English - A1/A2 BEGINNER / ELEMENTARY</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                
+                <a class="github-link" href="https://github.com/alekseyinshakov">https://github.com/alekseyinshakov</a>
+                <a href="https://www.flaticon.com/ru/free-icons/" title="обучение иконки">Free icons - Flaticon.com</a>
+                <div class="created-year">2024</div>
+                <a class="rss-logo" href="https://rs.school/courses/javascript-ru"><img src="img/rsschool-logo.svg" alt="logo"></a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- https://rs.school/courses/javascript-ru -->
+    <!-- <a href="https://www.flaticon.com/ru/free-icons/youtube" title="youtube иконки">Youtube иконки от Freepik - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/ru/free-icons/" title="книга иконки">Книга иконки от popo2021 - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/ru/free-icons/" title="обучение иконки">Обучение иконки от Freepik - Flaticon</a> -->
 </body>
+
 </html>
