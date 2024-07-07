@@ -16,7 +16,7 @@
                     <img src="img/photo.jpg" alt="my-photo">
                 </div>
                 <div class="info">
-                    <h2 class="name">Aleksey Inshakov</h2>
+                    <h1 class="name">Aleksey Inshakov</h1>
                     <ul class="contacts">
                         <li><span>Telegram:</span> <a target="_blank" href="https://t.me/sgdy4">@sgdy4</a>
                         </li>
@@ -70,8 +70,8 @@
                         <pre>
 var maxProfit = function (prices) {
 maxCash = 0;
-for(let i = 0; i < prices.length; i++) {
-    for(let n = i; n < prices.length; n++) {
+for(let i = 0; i &lt; prices.length; i++) {
+    for(let n = i; n &lt; prices.length; n++) {
         let diff = prices[n] - prices[i]
         if(diff > maxCash) {
             maxCash = diff;
@@ -165,8 +165,19 @@ return maxCash;
         </div>
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                
+                <a class="github-link" href="https://github.com/alekseyinshakov">https://github.com/alekseyinshakov</a>
+                <a href="https://www.flaticon.com/ru/free-icons/" title="обучение иконки">Free icons - Flaticon.com</a>
+                <div class="created-year">2024</div>
+                <a class="rss-logo" href="https://rs.school/courses/javascript-ru"><img src="img/rsschool-logo.svg" alt="logo"></a>
+            </div>
+        </div>
+    </footer>
     
-    </div>
+
 
     <!-- https://rs.school/courses/javascript-ru -->
     <!-- <a href="https://www.flaticon.com/ru/free-icons/youtube" title="youtube иконки">Youtube иконки от Freepik - Flaticon</a> -->

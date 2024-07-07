@@ -241,3 +241,32 @@ h3 {
         list-style-type: square;
     }
 }
+
+.footer{
+    /* background-color: #dddddd; */
+    
+    .container{
+    background-color: #dddddd;
+
+    }
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .rss-logo{
+        transition: all 0.2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        display: block;
+        width: 216px;
+        height: 80px;
+    }
+}
