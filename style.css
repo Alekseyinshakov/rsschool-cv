@@ -24,6 +24,11 @@
     font-size: 18px;
     line-height: 28px;
   }
+  h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
   .container {
     max-width: 900px;
     margin: 0 auto;
@@ -132,7 +137,6 @@
   }
   .project-item {
     width: 320px;
-    height: 250px;
     transition: all 0.5s;
   }
   .project-item:hover {
