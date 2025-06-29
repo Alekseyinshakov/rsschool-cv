@@ -30,10 +30,11 @@ ul li {
   list-style: none;
 }
 body {
-  background-color: #e4cec1;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
   font-family: Arial, serif;
   font-size: 18px;
   line-height: 28px;
+  padding-top: 25px;
 }
 h3 {
   font-size: 1.5em;
@@ -47,10 +48,14 @@ h3 {
   padding: 15px 30px;
 }
 .title {
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
   border-bottom: black 1px solid;
   line-height: 150%;
+}
+.link {
+  font-style: italic;
+  color: #640000 !important;
 }
 .photo_wrapper {
   -webkit-box-shadow: 4px 4px 13px -3px rgba(0, 0, 0, 0.48);
@@ -67,7 +72,7 @@ h3 {
   display: block;
 }
 .header {
-  background-color: #dddddd;
+  /* background-color: #dddddd; */
 }
 .header__inner {
   display: flex;
@@ -112,31 +117,35 @@ h3 {
   position: absolute;
   left: 0;
   bottom: 5px;
-  content: '';
+  content: "";
   height: 20px;
   width: 20px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.location:before{
-  background-image: url('img/icons/location.png');
+.location:before {
+  background-image: url("img/icons/location.png");
 }
 
-.phone:before{
-  background-image: url('img/icons/phone.png');
+.phone:before {
+  background-image: url("img/icons/phone.png");
 }
 
-.telegram:before{
-  background-image: url('img/icons/telegram.png');
+.telegram:before {
+  background-image: url("img/icons/telegram.png");
 }
 
-.email:before{
-  background-image: url('img/icons/email.png');
+.email:before {
+  background-image: url("img/icons/email.png");
 }
 
-.github:before{
-  background-image: url('img/icons/github.png');
+.github:before {
+  background-image: url("img/icons/github.png");
+}
+
+.codewars:before {
+  background-image: url("img/icons/codewars.png");
 }
 
 .contacts li a:hover {
@@ -162,8 +171,8 @@ p {
 .my-skills__inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin-bottom: 20px;
+  gap: 10px 20px;
 }
 h2 {
   font-size: 1.5em;
@@ -175,17 +184,28 @@ h2 {
   border-radius: 10px;
 }
 .projects-list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 40px; */
 }
 .project-item {
-  width: 320px;
+  width: 90%;
   transition: all 0.5s;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
-.project-item:hover {
-  transform: scale(1.1);
+.project-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.project-item a {
+  transition: all 0.2s;
+}
+.project-item a:hover {
+  /* transform: scale(1.1); */
+  text-decoration: underline;
 }
 .project-item h4 {
   font-size: 1.3em;
@@ -193,7 +213,7 @@ h2 {
 }
 .project-item img {
   width: 100%;
-  height: 100%;
+  box-shadow: #d9e2ec 0px 0px 20px;
 }
 .courses_list {
   margin-bottom: 50px;
