@@ -24,6 +24,7 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+  text-align: justify;
 }
 ul,
 ul li {
@@ -34,7 +35,6 @@ body {
   font-family: Arial, serif;
   font-size: 18px;
   line-height: 28px;
-  padding-top: 25px;
 }
 h3 {
   font-size: 1.5em;
@@ -184,13 +184,14 @@ h2 {
   border-radius: 10px;
 }
 .projects-list {
-  /* display: flex;
+  margin-top: 30px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px; */
+  gap: 20px;
 }
 .project-item {
-  width: 90%;
+  width: 46%;
   transition: all 0.5s;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -236,6 +237,11 @@ h2 {
 .courses_list .youtube::before {
   top: 2px;
 }
+.rss::before {
+  background-image: url("./img/icons/rss-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
 .youtube::before {
   background-image: url("./img/icons/free-icon-youtube-174883.png");
   background-size: contain;
@@ -282,6 +288,34 @@ h2 {
 }
 .footer__inner .rss-logo:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 780px) {
+  .container {
+    padding: 15px 20px;
+  }
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .photo_wrapper {
+    width: 100%;
+    max-width: 300px;
+  }
+  .name {
+    text-align: center;
+  }
+  .contacts {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contacts li {
+    margin-bottom: 10px;
+  }
+  .project-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 520px) {
