@@ -31,10 +31,10 @@ ul li {
   list-style: none;
 }
 body {
-  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  background: linear-gradient(to right, #deeefd, #b7c6d8);
   font-family: Arial, serif;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
 }
 h3 {
   font-size: 1.5em;
@@ -91,7 +91,7 @@ h3 {
   color: #525252;
   text-align: center;
 }
-.job-title{
+.job-title {
   font-size: 1.2em;
   color: #525252;
   text-align: center;
@@ -178,7 +178,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  gap: 10px 20px;
+  gap: 5px 20px;
 }
 h2 {
   font-size: 1.5em;
@@ -214,13 +214,17 @@ h2 {
   /* transform: scale(1.1); */
   text-decoration: underline;
 }
+.project-item a:hover img {
+  box-shadow: #b0b8c0 0px 0px 20px;
+}
 .project-item h4 {
   font-size: 1.3em;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
 }
 .project-item img {
   width: 100%;
-  box-shadow: #d9e2ec 0px 0px 20px;
+  box-shadow: #898989 0px 0px 20px;
+  transition: all 0.2s;
 }
 .courses_list {
   margin-bottom: 50px;
@@ -247,7 +251,7 @@ h2 {
   background-image: url("./img/icons/rss-logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
-} 
+}
 .youtube::before {
   background-image: url("./img/icons/free-icon-youtube-174883.png");
   background-size: contain;
