@@ -71,9 +71,7 @@ h3 {
   object-fit: cover;
   display: block;
 }
-.header {
-  /* background-color: #dddddd; */
-}
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -214,9 +212,7 @@ h2 {
     text-indent: 0;
   }
 }
-.italic {
-  /* font-style: italic; */
-}
+
 .project-item a {
   transition: all 0.2s;
 }
@@ -233,6 +229,7 @@ h2 {
 }
 .project-item img {
   width: 100%;
+  aspect-ratio: 1158/796 ;
   box-shadow: #898989 0px 0px 20px;
   transition: all 0.2s;
   margin-bottom: 5px;
@@ -285,9 +282,7 @@ h2 {
 .langs-list li {
   list-style-type: square;
 }
-.footer {
-  /* background-color: #dddddd; */
-}
+
 .footer .container {
   background-color: #dddddd;
 }
